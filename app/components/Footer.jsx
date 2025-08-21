@@ -46,7 +46,7 @@ const Footer = () => {
                 <li><FaFacebook /></li>
               </a>
               <a
-                href="https://www.facebook.com/groups/4024503017805048/?ref=share&mibextid=wwXIfr&rdid=efsq7Rp07HTu0EMj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1Apqtx46ZL%2F%3Fmibextid%3DwwXIfr"
+                href="https://www.tiktok.com/@life.school.for.f?_t=ZN-8z24ntPhaC6&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
               >              
