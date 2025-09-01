@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Allow CMS/Identity scripts on /admin
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+  Content-Security-Policy = "default-src 'self'; script-src 'self' https://unpkg.com https://identity.netlify.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.netlify.com https://identity.netlify.com https://github.com https://api.github.com; img-src 'self' data: blob:; frame-src 'self' https://identity.netlify.com;"

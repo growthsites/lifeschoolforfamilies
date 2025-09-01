@@ -4,7 +4,30 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Content Manager</title>
+
+    <!-- Netlify Identity (login UI) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Decap (Netlify) CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // If Identity is on, add a login redirect back to /admin after logging in on any page
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+      // Make sure CMS boots even if auto-init fails
+      if (window.CMS && !window.CMS_INITIALISED) {
+        window.CMS.init({ configPath: "config.yml" });
+        window.CMS_INITIALISED = true;
+      }
+    </script>
+  </body>
 </html>
