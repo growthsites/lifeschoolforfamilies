@@ -89,6 +89,7 @@ const Navbar = () => {
               >
                 Contact Us
               </li>
+              <Link href="/blog"><li className="py-4 cursor-pointer">Blog</li></Link>
             </a>
           </ul>
         </div>
