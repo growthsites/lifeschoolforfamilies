@@ -1,0 +1,25 @@
+# Decap (Netlify) CMS configuration
+backend:
+  name: git-gateway
+  branch: main
+
+# Optional: enable local editing while developing (no Netlify login needed).
+# Remove or set to false in production if you prefer.
+local_backend: true
+
+media_folder: "public/uploads"   # where uploaded files are stored in the repo
+public_folder: "/uploads"        # how those files are referenced in the site
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "excerpt", label: "Excerpt", widget: "text", required: false }
+      - { name: "coverImage", label: "Cover Image", widget: "image", required: false }
+      - { name: "author", label: "Author", required: false }
+      - { name: "body", label: "Body", widget: "markdown" }

@@ -37,6 +37,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >              <li className='hover:border-b text-xl'>Contact us</li>
             </a>
+            <Link href="/blog"><li className="hover:border-b text-xl">Blog</li></Link>
           </ul>
         </div>
         <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
