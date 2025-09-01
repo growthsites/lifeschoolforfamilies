@@ -89,8 +89,8 @@ const Navbar = () => {
               >
                 Contact Us
               </li>
-              <Link href="/blog"><li className="py-4 cursor-pointer">Blog</li></Link>
             </a>
+              <Link href="/blog"><li className="py-4 cursor-pointer">Blog</li></Link>
           </ul>
         </div>
         <div className='flex flex-row justify-around pt-10 items-center'>
