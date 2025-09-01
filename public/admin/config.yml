@@ -22,4 +22,4 @@ collections:
       - { name: "author", label: "Author", required: false }
       - { name: "body", label: "Body", widget: "markdown" }
 
-local_backend: true
+# local_backend: true
