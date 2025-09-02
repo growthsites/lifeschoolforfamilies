@@ -1,16 +1,16 @@
-// app/blog/page.jsx
+// app/useful-resources/page.jsx
 import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
-export default function BlogPage() {
+export default function UsefulResourcesPage() {
   const posts = getAllPosts();
 
   return (
     <main className="w-full max-w-5xl mx-auto px-5 py-12">
-      <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">Blog</h1>
+      <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">Useful Resources</h1>
       <p className="text-neutral-600 mt-2">Latest articles and updates.</p>
 
       <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -44,7 +44,7 @@ export default function BlogPage() {
                 </p>
               )}
               <Link
-                href={`/blog/${slug}`}
+                href={`/useful-resources/${slug}`}
                 className="inline-block mt-4 text-blue-600 underline underline-offset-4"
               >
                 Read more

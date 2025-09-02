@@ -1,4 +1,4 @@
-// app/blog/[slug]/page.jsx
+// app/useful-resources/[slug]/page.jsx
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 import DOMPurify from "isomorphic-dompurify";

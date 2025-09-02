@@ -38,7 +38,7 @@ const Navbar = () => {
           <li><Link href="/tutoring" className="hover:opacity-80 text-xl">Tutoring</Link></li>
           <li><Link href="/about" className="hover:opacity-80 text-xl">About</Link></li>
           <li><Link href="/contact" className="hover:opacity-80 text-xl">Contact us</Link></li>
-          <li><Link href="/blog" className="hover:opacity-80 text-xl">Blog</Link></li>
+          <li><Link href="/useful-resources" className="hover:opacity-80 text-xl">Useful Resources</Link></li>
         </ul>
 
         {/* Mobile burger */}
@@ -91,8 +91,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/blog" onClick={() => setMenuOpen(false)} className="block py-2">
-                Blog
+              <Link href="/useful-resources" onClick={() => setMenuOpen(false)} className="block py-2">
+                Useful Resources
               </Link>
             </li>
           </ul>
